@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Untitled Test Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Book Appointment</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>data test.csv<datalist><option>data test.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://demoaut.katalon.com/<datalist><option>http://demoaut.katalon.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=btn-make-appointment<datalist><option>id=btn-make-appointment</option><option>link=Make Appointment</option><option>//a[contains(text(),'Make Appointment')]</option><option>//a[@id='btn-make-appointment']</option><option>//header[@id='top']/div/a</option><option>//a[contains(@href, './profile.php#login')]</option><option>//div/a</option><option>css=#btn-make-appointment</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=txt-username<datalist><option>id=txt-username</option><option>name=username</option><option>//input[@id='txt-username']</option><option>//section[@id='login']/div/div/div[2]/form/div[2]/div/input</option><option>//div[2]/div/input</option><option>css=#txt-username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=txt-username<datalist><option>id=txt-username</option><option>name=username</option><option>//input[@id='txt-username']</option><option>//section[@id='login']/div/div/div[2]/form/div[2]/div/input</option><option>//div[2]/div/input</option><option>css=#txt-username</option></datalist></td><td>${username}</td>
+</tr>
+<tr><td>type</td><td>id=txt-password<datalist><option>id=txt-password</option><option>name=password</option><option>//input[@id='txt-password']</option><option>//section[@id='login']/div/div/div[2]/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#txt-password</option></datalist></td><td>${password}</td>
+</tr>
+<tr><td>sendKeys</td><td>id=txt-password<datalist><option>id=txt-password</option><option>name=password</option><option>//input[@id='txt-password']</option><option>//section[@id='login']/div/div/div[2]/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#txt-password</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr><td>click</td><td>id=btn-login<datalist><option>id=btn-login</option><option>//button[@id='btn-login']</option><option>//section[@id='login']/div/div/div[2]/form/div[4]/div/button</option><option>//button</option><option>css=#btn-login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=combo_facility<datalist><option>id=combo_facility</option><option>name=facility</option><option>//select[@id='combo_facility']</option><option>//section[@id='appointment']/div/div/form/div/div/select</option><option>//select</option><option>css=#combo_facility</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>id=combo_facility<datalist><option>id=combo_facility</option><option>name=facility</option><option>//select[@id='combo_facility']</option><option>//section[@id='appointment']/div/div/form/div/div/select</option><option>//select</option><option>css=#combo_facility</option></datalist></td><td>${facility}</td>
+</tr>
+<tr><td>click</td><td>id=chk_hospotal_readmission<datalist><option>id=chk_hospotal_readmission</option><option>name=hospital_readmission</option><option>//input[@id='chk_hospotal_readmission']</option><option>//section[@id='appointment']/div/div/form/div[2]/div/label/input</option><option>//input</option><option>css=#chk_hospotal_readmission</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=radio_program_medicaid<datalist><option>id=radio_program_medicaid</option><option>//input[@id='radio_program_medicaid']</option><option>//section[@id='appointment']/div/div/form/div[3]/div/label[2]/input</option><option>//label[2]/input</option><option>css=#radio_program_medicaid</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//section[@id='appointment']/div/div/form/div[3]/div/label[2]<datalist><option>//section[@id='appointment']/div/div/form/div[3]/div/label[2]</option><option>//label[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=txt_visit_date<datalist><option>id=txt_visit_date</option><option>name=visit_date</option><option>//input[@id='txt_visit_date']</option><option>//section[@id='appointment']/div/div/form/div[4]/div/div/input</option><option>//div/input</option><option>css=#txt_visit_date</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=chk_hospotal_readmission<datalist><option>id=chk_hospotal_readmission</option><option>name=hospital_readmission</option><option>//input[@id='chk_hospotal_readmission']</option><option>//section[@id='appointment']/div/div/form/div[2]/div/label/input</option><option>//input</option><option>css=#chk_hospotal_readmission</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=radio_program_medicaid<datalist><option>id=radio_program_medicaid</option><option>//input[@id='radio_program_medicaid']</option><option>//section[@id='appointment']/div/div/form/div[3]/div/label[2]/input</option><option>//label[2]/input</option><option>css=#radio_program_medicaid</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=chk_hospotal_readmission<datalist><option>id=chk_hospotal_readmission</option><option>name=hospital_readmission</option><option>//input[@id='chk_hospotal_readmission']</option><option>//section[@id='appointment']/div/div/form/div[2]/div/label/input</option><option>//input</option><option>css=#chk_hospotal_readmission</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//section[@id='appointment']/div/div/form/div[4]/div/div/div/span<datalist><option>//section[@id='appointment']/div/div/form/div[4]/div/div/div/span</option><option>//span</option><option>css=span.glyphicon.glyphicon-calendar</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//tr[2]/th<datalist><option>//tr[2]/th</option><option>css=th.prev</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//section[@id='appointment']/div/div/form/div[5]<datalist><option>//section[@id='appointment']/div/div/form/div[5]</option><option>//div[5]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//section[@id='appointment']/div/div/form/div[4]/div/div/div/span<datalist><option>//section[@id='appointment']/div/div/form/div[4]/div/div/div/span</option><option>//span</option><option>css=span.glyphicon.glyphicon-calendar</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//td[7]<datalist><option>//td[7]</option><option>data test.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=txt_comment<datalist><option>id=txt_comment</option><option>name=comment</option><option>//textarea[@id='txt_comment']</option><option>//section[@id='appointment']/div/div/form/div[5]/div/textarea</option><option>//textarea</option><option>css=#txt_comment</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=txt_comment<datalist><option>id=txt_comment</option><option>name=comment</option><option>//textarea[@id='txt_comment']</option><option>//section[@id='appointment']/div/div/form/div[5]/div/textarea</option><option>//textarea</option><option>css=#txt_comment</option></datalist></td><td>${comment}</td>
+</tr>
+<tr><td>click</td><td>id=btn-book-appointment<datalist><option>id=btn-book-appointment</option><option>//button[@id='btn-book-appointment']</option><option>//section[@id='appointment']/div/div/form/div[6]/div/button</option><option>//button</option><option>css=#btn-book-appointment</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=menu-toggle<datalist><option>id=menu-toggle</option><option>//a[@id='menu-toggle']</option><option>//a[contains(@href, '#')]</option><option>//a</option><option>css=#menu-toggle</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>xpath=(//a[@onclick='$("#menu-close").click();'])[5]</option><option>//nav[@id='sidebar-wrapper']/ul/li[5]/a</option><option>//a[contains(@href, 'authenticate.php?logout')]</option><option>//li[5]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
